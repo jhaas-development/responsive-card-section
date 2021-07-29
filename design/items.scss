@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand&family=Ubuntu&display=swap');
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Quicksand', sans-serif;
+// font-family: 'Ubuntu', sans-serif;
+
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+.content {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+        margin-bottom: 1%;
+
+        .cards-item {
+            display: flex;
+            padding: 20px;
+            width: 100%;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                width: 100%;
+                border: 1px solid rgba(235, 234, 234, 0.452);
+                background-color: white;
+
+                .card-image {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .card-content {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 15px;
+                    width: 100%;
+                    font-family: 'Quicksand', sans-serif;
+
+                    .card-title {
+                        padding-bottom: 1rem;
+                        font-size: 1.3rem;
+                        font-weight: 500;
+                        color: #000000;
+                    }
+
+                    .card-text {
+                        margin-bottom: 1rem;
+                        line-height: 2;
+                        font-size: 0.91rem;
+                        color: #0202029c;
+
+                        ul li {
+                            list-style: none;
+                        }
+
+                        .content-information {
+                            width: 100%;
+                            float: left;
+                            font-size: 0.93rem;
+                        }
+
+                        .content-right {
+                            width: 50%;
+                            float: right;
+                            font-size: 0.93rem;
+                        }
+                    }
+
+                    .cards-button {
+                        padding: 0.5rem;
+                        text-align: center;
+                        text-decoration: none;
+                        border: 1px solid #cccccc;
+                        background-color: #fff;
+                        color: #696969;
+                    }
+
+                    .cards-button:hover {
+                        text-decoration: none;
+                        border: 1px solid #000000;
+                        background-color: #000000;
+                        color: #fff;
+                        transition: 0.3s ease-in-out;
+                    }
+
+                    .button-block {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 550px) {
+
+    .content {
+        .cards-container {
+            .cards-item {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .content {
+        .cards-container {
+            .cards-item {
+                width: 33.3333%;
+            }
+        }
+    }
+}
